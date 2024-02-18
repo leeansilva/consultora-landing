@@ -5,16 +5,17 @@ import Seccion from "./components/Seccion"
 import { Box, Button, HStack, Image, Text } from "@chakra-ui/react"
 import Servicios from "./components/Servicios/Servicios"
 import Footer from "./components/Footer/Footer"
+import Carousel from "./components/Carousel/Carousel"
 
 function App() {
 
-  const [scrollPosition, setScrollPosition] = React.useState('blackAlpha.400');
+  const [scrollPosition, setScrollPosition] = React.useState('transparent');
   const handleScroll = (e) => {
     const { scrollTop, scrollHeight, clientHeight } = e.target;
     const position = Math.ceil(
       (scrollTop / (scrollHeight - clientHeight)) * 100
     );
-    setScrollPosition(position > 5 ? "blackAlpha.700" : "blue.700")
+    setScrollPosition(position > 5 ? "blackAlpha.700" : "transparent")
   };
 
   return (
@@ -26,7 +27,7 @@ function App() {
       <Header bg={scrollPosition} />
       <Hero />
 
-      <Seccion bg={'blue.800'}>
+      <Seccion bg={'gray.900'}>
         <Text pt={'50px'} textAlign={'center'} color={'white'} fontSize={'5xl'} fontWeight={800}>Servicios On-demand</Text>
         <Text mb={'50px'} textAlign={'center'} color={'white'} fontSize={'2xl'} fontWeight={200}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque fugiat explicabo cum repell </Text>
 
@@ -35,21 +36,23 @@ function App() {
         </HStack>
       </Seccion>
 
-      <Seccion bg={'blue.800'}>
+      <Seccion bg={''}>
         <HStack gap={'60px'} p={'50px 0'}>
           <Box>
-            <Image borderRadius={'10px'} src='https://blog.rapiboy.com/wp-content/uploads/2021/09/rapiboy-linkedin-como-incrementar-ventas-tienda-online-1024x505.jpg'></Image>
+            <Image borderRadius={'10px'} src='/ilus/undraw_web_shopping_re_owap.svg'></Image>
           </Box>
           <Box>
             <Text color={'white'} fontSize={'5xl'} fontWeight={800}>Mas falopa</Text>
-            <Text color={'white'} fontSize={'5xl'} fontWeight={800}>E-COMMERCE</Text>
+            <Text color={'purple.500'} fontSize={'5xl'} fontWeight={800}>E-COMMERCE</Text>
             <Text mb={'50px'} color={'white'} fontSize={'2xl'} fontWeight={200}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque fugiat explicabo cum repell </Text>
-            <Button>Hablemos</Button>
+            <Button colorScheme="purple">Hablemos</Button>
           </Box>
         </HStack>
       </Seccion>
 
-      <Seccion>Carrousel acá</Seccion>
+      <Seccion bg={'blue.800'}>
+      <Carousel/>
+      </Seccion>
       <Footer />
     </Box>
   )
