@@ -7,7 +7,6 @@ export default function Footer() {
             <Container maxW={'6xl'} h={'inherit'}>
                 <HStack h={'inherit'} justifyContent={'space-between'} color={'white'}>
                     <Text fontSize={'2xl'}>FOOTER</Text>
-
                     <HStack>
                         <Link>Inicio</Link>
                         <Link>Nosotros</Link>

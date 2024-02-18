@@ -11,16 +11,26 @@ function App() {
     const position = Math.ceil(
         (scrollTop / (scrollHeight - clientHeight)) * 100
     );
-    setScrollPosition(position > 5 ? "blackAlpha.400" : "transparent" )
+    setScrollPosition(position > 5 ? "blackAlpha.400" : "blue.700" )
 };
 
   return (
-    <Box as='div' h={'100vh'} id="page" 
+    <Box 
+    as='div'
+    id="page" 
+    h={'100svh'}
     overflow={'auto'}
-    // onWheel={e => console.log(window.scrollY)} 
-    onScroll={handleScroll}>
+    onScroll={handleScroll}
+    >
       <Header bg={scrollPosition}/>
       <Hero/>
+      <Seccion>aa</Seccion>
+      <Seccion>aa</Seccion>
+      <Seccion>aa</Seccion>
+      <Seccion>aa</Seccion>
+      <Seccion>aa</Seccion>
+      <Seccion>aa</Seccion>
+      <Seccion>aa</Seccion>
       <Seccion>aa</Seccion>
     </Box>
   ) 

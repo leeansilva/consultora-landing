@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Container, HStack, VStack, Flex, Text, Link,Center } from '@chakra-ui/react'
 export default function Hero() {
   return (
-    <Box h={'100svh'} bg={'blue.700'} pt={'80px'}>
+    <Box h={'100svh'} bg={'blue.700'} pt={'10px'}>
         <Container maxW={'6xl'}>
             <Center>
                 <HStack color={'white'}>
