@@ -6,6 +6,7 @@ import { Box, Button, HStack, Image, Text } from "@chakra-ui/react"
 import Servicios from "./components/Servicios/Servicios"
 import Footer from "./components/Footer/Footer"
 import Carousel from "./components/Carousel/Carousel"
+import Universe from "./components/Hero/Universe"
 
 function App() {
 
@@ -24,7 +25,9 @@ function App() {
       overflow={'auto'}
       onScroll={handleScroll}
     >
+      <Universe/>
       <Header bg={scrollPosition} />
+      
       <Hero />
 
       <Seccion bg={'gray.900'}>
@@ -50,7 +53,7 @@ function App() {
         </HStack>
       </Seccion>
 
-      <Seccion bg={'blue.800'}>
+      <Seccion bg={'gray.900'}>
       <Carousel/>
       </Seccion>
       <Footer />

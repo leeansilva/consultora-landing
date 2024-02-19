@@ -18,7 +18,7 @@ export default function Carousel() {
         userSelect: "none",
         _hover: {
             opacity: 0.8,
-            bg: "blue.500",
+            bg: "purple.500",
         },
     };
     const slides = [
@@ -71,8 +71,8 @@ export default function Carousel() {
     return (
         <Flex
             w="full"
-            bg="#edf3f8"
-            _dark={{ bg: "#3e3e3e", }}
+            bg="transparent"
+            _dark={{ bg: "transparent", }}
             
             alignItems="center"
             justifyContent="center"
@@ -80,7 +80,7 @@ export default function Carousel() {
             <Flex w="full" overflow="hidden" pos="relative">
                 <Flex h="400px" w="full" {...carouselStyle}>
                     {slides.map((slide, sid) => (
-                        <Box key={`slide-${sid}`} boxSize="full" flex="none" bg={'gray'}>
+                        <Box key={`slide-${sid}`} boxSize="full" flex="none" bg={'transparent'}>
                             {/* <Text
                                 color="white"
                                 fontSize="xs"
@@ -92,7 +92,7 @@ export default function Carousel() {
                             </Text> */}
 
                             <Center w={'full'} h={'full'}>
-                            <Text fontSize={'6xl'}>Mandale contenido</Text>
+                            <Text fontSize={'6xl'} color={'white'}>Mandale contenido wacho</Text>
                             </Center>
                             {/* <Image
                                 src={slide.img}
