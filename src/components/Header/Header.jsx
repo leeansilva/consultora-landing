@@ -9,10 +9,10 @@ export default function Header({bg}) {
                     <Text fontSize={'2xl'}>UI</Text>
 
                     <HStack>
-                        <Link>Inicio</Link>
-                        <Link>Nosotros</Link>
-                        <Link>Servicios</Link>
-                        <Link>Contacto</Link>
+                        <Link fontSize={'xl'}>Inicio</Link>
+                        <Link fontSize={'xl'}>Nosotros</Link>
+                        <Link fontSize={'xl'}>Servicios</Link>
+                        <Link fontSize={'xl'}>Contacto</Link>
                     </HStack>
                 </HStack>
             </Container>
