@@ -2,9 +2,11 @@ import { Box } from '@chakra-ui/react'
 import React from 'react'
 
 export default function Universe() {
+    //El transform es para que no se vea la manito
     return (
         <Box as='div' pointerEvents={'none'} className="sketchfab-embed-wrapper" pos={'fixed'} w={'100%'} h={'100svh'} zIndex={0} top={0} opacity={0.3} transition={'all 3s lineal'}>
             <iframe
+                style={{transform:'scale(1.4)', trasnformOrigin:'0 0'}}
                 title="Need some space?"
                 frameborder="0"
                 allowfullscreen
