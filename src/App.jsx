@@ -56,7 +56,10 @@ function App() {
       <Seccion bg={'gray.900'}>
       <Carousel/>
       </Seccion>
+     
       <Footer />
+
+
     </Box>
   )
 }
